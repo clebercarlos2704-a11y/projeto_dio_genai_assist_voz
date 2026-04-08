@@ -10,6 +10,15 @@ Idioma utilizado no projeto: **Português (`pt`)**
 
 ---
 
+## ▶️ Acesse o Notebook no Google Colab
+
+🔗 **Link direto para execução do projeto:**  
+https://colab.research.google.com/drive/1Q2jYRopcjjhSV9jxl0bUMqtIrcLk7vlm?usp=sharing
+
+> Recomenda-se abrir o link logado em uma conta Google e executar as células na ordem indicada.
+
+---
+
 ## 🧠 Funcionalidades
 
 - Gravação de áudio diretamente pelo navegador
@@ -38,3 +47,42 @@ Idioma utilizado no projeto: **Português (`pt`)**
 
 ---
 
+## 🚀 Passo a Passo para Execução
+
+### 1️⃣ Abrir o Projeto no Google Colab
+
+- Acesse o link do notebook disponibilizado acima
+- Execute as células **na ordem apresentada**
+
+---
+
+### 2️⃣ Gravação de Áudio 🎤
+
+- Execute a célula responsável pela gravação
+- Autorize o acesso ao microfone quando solicitado
+- Fale sua pergunta dentro do tempo configurado (padrão: 10 segundos)
+- O áudio será salvo como `request_audio.wav`
+
+---
+
+### 3️⃣ Reconhecimento de Fala com Whisper 🧠
+
+- O modelo Whisper transcreve o áudio gravado
+- O texto transcrito será exibido no output
+
+**Exemplo de pergunta:**
+
+> Como a inteligência artificial generativa pode ajudar bancos a melhorar o atendimento ao cliente?
+
+---
+
+### 4️⃣ Configuração da API OpenAI 🔑
+
+Antes de executar a integração com o ChatGPT:
+
+1. Acesse: https://platform.openai.com/account/api-keys  
+2. Gere sua **API Key**
+3. No código, substitua:
+
+```python
+os.environ['OPENAI_API_KEY'] = 'coloque sua API Key'
